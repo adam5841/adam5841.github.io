@@ -2,15 +2,21 @@
 
 .main {
   width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 4rem;
+  padding: 50px 10px;
+  // margin: 0px auto;
+  // margin-top: 4rem;
 }
 .greet-main {
-  width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 2rem;
+  height: 100vh;
+  min-height: 100vh;
+  margin-top: 0; /* or other properties that align with the design */
+  padding-top: 0; /* Ensure no padding is pushing the content down */
+
+
+}
+.title {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
 }
 
 .greeting-main {
@@ -35,9 +41,9 @@
 }
 
 .greeting-text {
-  font-size: 70px;
+  font-size: 100px;
   line-height: 1.1;
-  color: $textColor !important;
+  color: white !important;
 }
 
 .greeting-text-p {
@@ -48,14 +54,6 @@
 .greeting-image-div > img {
   max-width: 100%;
   height: auto;
-}
-
-.wave-emoji {
-  animation-duration: 1.8s;
-  animation-iteration-count: infinite;
-  animation-name: wave;
-  display: inline-block;
-  transform-origin: 70% 70%;
 }
 
 @keyframes wave {

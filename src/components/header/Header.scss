@@ -20,8 +20,20 @@
   background-color: $buttonColor !important;
 }
 
+// .header {
+//   background-color: $lightBackground1;
+//   max-width: 100%;
+//   padding: 15px 20px;
+//   margin: 0px auto;
+// }
 .header {
-  background-color: $lightBackground1;
+  background-color: rgba(0, 0, 0, 0.5); // semi-transparent black background
+  backdrop-filter: blur(10px); // This will blur the background slightly behind the header
+
+  // Add a text-shadow to the navigation links for better legibility
+  .menu a {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
   max-width: 100%;
   padding: 15px 20px;
   margin: 0px auto;

@@ -39,6 +39,12 @@
   -o-transition: all 0.3s ease;
   transition: all 0.25s ease;
 }
+.full-width-container {
+  width: 100%;
+  margin: 0 auto; /* Center the element horizontally */
+  padding: 0 1rem; /* Add padding if needed */
+  box-sizing: border-box; /* Ensure padding is included in the total width */
+}
 
 .project-detail {
   text-align: center;
@@ -61,7 +67,34 @@
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem 1rem;
+  gap: 1rem 4rem;
+  width: 90%;  // Set the width to 90% of the parent
+  margin: 2rem auto; // Center the entire container and give it top and bottom margins
+  justify-content: space-evenly;
+}
+
+
+.heading-container {
+  grid-column: 1 / -1; // Span across all columns
+  text-align: left; // Align text to the left (adjust this if you need a different alignment)
+}
+
+.project-subtitle {
+  color: $cardSubtitle;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0.5rem 0; // Adjust spacing if necessary
+  text-align: left; // Keep aligned consistently with the heading
+}
+
+@media (max-width: 768px) {
+  .skills-heading {
+    font-size: 1.75rem;
+  }
+
+  .project-subtitle {
+    font-size: 16px;
+  }
 }
 
 .project-card-footer span.project-tag {

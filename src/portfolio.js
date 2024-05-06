@@ -19,14 +19,73 @@ const illustration = {
   animated: true // Set to false to use static SVG
 };
 
+const navBar = {
+  show: true
+}
+const mainBody = {
+  resumeLink:
+    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    gradientColors: "#4484ce, #1ad7c0, #ff9b11, #9b59b6, #ff7f7f, #ecf0f1",
+    firstName: "Adam",
+    middleName: "",
+    lastName: "An",
+    message: " Passionate about changing the world with technology. ",
+    icons: [
+      {
+        image: "fa-linkedin",
+        url: "https://www.linkedin.com/in/adam-jaehyun-an/",
+      },
+      {
+        image: "fa-github",
+        url: "https://github.com/adam5841",
+      },
+      {
+        image: "fa-facebook",
+        url: "https://www.facebook.com/adam.an.73594/",
+      },
+      {
+        image: "fa-instagram",
+        url: "https://www.instagram.com/adam_an/",
+      },
+      
+    ],
+
+}
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Adam",
+  title: "Hi all, I'm Adam",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Full Stack Software Developer ."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    gradientColors: "#4484ce, #1ad7c0, #ff9b11, #9b59b6, #ff7f7f, #ecf0f1",
+    firstName: "Hashir",
+    middleName: "",
+    lastName: "Shoaib",
+    message: " Passionate about changing the world with technology. ",
+    icons: [
+      {
+        image: "fa-github",
+        url: "https://github.com/hashirshoaeb",
+      },
+      {
+        image: "fa-facebook",
+        url: "https://www.facebook.com/hashirshoaeb",
+      },
+      {
+        image: "fa-instagram",
+        url: "https://www.instagram.com/hashirshoaeb/",
+      },
+      {
+        image: "fa-linkedin",
+        url: "https://www.linkedin.com/in/hashirshoaeb/",
+      },
+      {
+        image: "fa-twitter",
+        url: "https://www.twitter.com/hashirshoaeb/",
+      },
+    ],
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -64,6 +123,10 @@ const skillsSection = {
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
+    {
+      skillName: "python",
+      fontAwesomeClassname: "fab fa-python"
+    },
     {
       skillName: "html-5",
       fontAwesomeClassname: "fab fa-html5"
@@ -108,10 +171,7 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "firebase",
       fontAwesomeClassname: "fas fa-fire"
     },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
+    
     {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
@@ -126,23 +186,21 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      schoolName: "University of California, Berkeley",
+      logo: require("./assets/images/berkeleylogo.png"),
+      subHeader: "Bachelors in Computer Science",
+      duration: "August 2020 - May 2024",
+      desc: "Coursework: Data Structures, Interpretation of Programs, Efficient Algorithms, Computer Architecture, Database Systems, Discrete Mathematics, Artificial Intelligence, Cloud Computing, Computer Security",
+      // descBullets: [
+      //   "Coursework: "
+      // ]
+     
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Irvine High School",
+      logo: require("./assets/images/ihslogo.png"),
+      duration: "September 2016 - June 2020",
+
     }
   ]
 };
@@ -174,29 +232,25 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
-    },
-    {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Software Engineer Intern",
+      company: "Verkada",
+      companylogo: require("./assets/images/verkadalogo.webp"),
+      date: "May 2023 – August 2023",
+      desc: "At Verkada, I developed a Swift-based middleware for integrating third-party devices with Verkada’s alarm systems, enhanced the CI/CD pipeline for direct scans from cameras to the app, and automated extensive testing, achieving significant improvements in system performance and user setup efficiency.",
     },
     {
       role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      company: "Grant Thornton",
+      companylogo: require("./assets/images/Glogo.png"),
+      date: "June 2022 – August 2022",
+      desc: "Built a modular data visualization platform using React and D3.js integrated with GraphQL, and collaborated on developing a tax basis calculation tool that improved calculation speed by 17% through optimized algorithms and parallel processing."
+    },
+    {
+      role: "Software Engineer Intern",
+      company: "Neck.App",
+      companylogo: require("./assets/images/necklogo.png"),
+      date: "May 2021 – Sep 2021",
+      desc: "Engineered dynamic REST APIs and implemented advanced indexing strategies with Amazon ElasticSearch and Redis to enhance data query performance, significantly improving the application's responsiveness and user experience."
     }
   ]
 };
@@ -212,29 +266,73 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
+  subtitle: "ORGANIZATIONS AND INITIATIVES I'VE CONTRIBUTED TO",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/mdb.jpeg"),
+      projectName: "Mobile Developers of Berkeley",
+      projectDesc: "Community of mobile developers who love solving real-world problems through innovative methods and cutting edge technology.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "http://mdb.dev/"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/joy.png"),
+      projectName: "Joy",
+      projectDesc: "Joy can accurately recognize your emotions from the sound of your voice (in real-time) and deliver exclusive in-app wellness content from world-renowned experts that is keyed to your real-time emotional needs",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "Visit App",
+          url: "https://apps.apple.com/us/app/joy-ai-wellness-platform/id1618609385"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/bookster.jpeg"),
+      projectName: "Bookster",
+      projectDesc: "A Flutter application that aims to provide a community for book-lovers to showcase their favorite books and explore.",
+      footerLink: [
+        {
+          name: "Visit Github",
+          url: "https://github.com/adam5841/Bookster"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/gavel.png"),
+      projectName: "Courtroom",
+      projectDesc: "Courtroom provides matchmaking services in order to match clients and pro-bono lawyers/defense attorneys. Clients would submit a basic overview of their case and situation that lawyers would be able to filter through. Lawyers will have a profile describing their expertise and ratings that previous clients can give.",
+      footerLink: [
+        {
+          name: "Visit Github",
+          url: "https://github.com/adam5841/Courtroom"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/fire.jpeg"),
+      projectName: "FlameVent",
+      projectDesc: "Created a CPU-automated fire extinguisher that utilize UV/IR sensors to detect and extinguish kitchen fires. Won 3rd place in Spirit of Innovation Conrad Challenge",
+      footerLink: [
+        {
+          name: "Visit Pitch",
+          url: "https://docs.google.com/presentation/d/1gAF_4f4iaP8DPaD2JbwbAyJl_pPwpN11xkgCS8BUDfg/edit?usp=sharing"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/gitlet.png"),
+      projectName: "Gitlet",
+      projectDesc: "Gitlet is a version-control system that's similar to Git and utilizes Java. It supports most of Git's local functionalities, including add, commit, checkout, and log. It also supports branching actions like merge and rebase",
+      footerLink: [
+        {
+          name: "Visit Github",
+          url: "https://github.com/adam5841/Gitlet"
         }
       ]
     }
@@ -246,56 +344,43 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+  title: emoji("Achievements"),
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Cal Leadership Award",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "The Leadership Award is a one-year, merit-based scholarship that recognizes undergraduate students at U.C. Berkeley who demonstrate innovative, initiative-driven leadership that has a meaningful impact on their academic, work, or community environments.",
+      image: require("./assets/images/leadership.png"),
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          name: "Website",
+          url: "https://alumni.berkeley.edu/get-involved/scholarships/the-leadership-award/"
         },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "Tomo Credit Case Competition",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+        "Won 2nd place out of 250 teams for the Tomo Credit Case Competition. Developed innovative solutions to help solve unique business challenges",
+      image: require("./assets/images/tomo.jpeg"),
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "Website",
+          url: "https://tomocredit.com/"
         }
       ]
     },
 
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
+      title: "Presidential Award",
+      subtitle: "The President’s Volunteer Service Award recognizes the valuable contributions volunteers make in our communities and encourages more people to serve. The award honors this American tradition and thanks those who inspire others to engage in volunteer service by demonstrated commitment and example.",
+      image: require("./assets/images/pvsa.png"),
       imageAlt: "PWA Logo",
       footerLink: [
-        {name: "Certification", url: ""},
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "Website",
+          url: "https://www2.ed.gov/programs/presedaward/index.html"
         }
       ]
     }
@@ -362,9 +447,9 @@ const podcastSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    "Feel free to message me! I'm always excited to meet new people and explore interesting opportunities",
+    number: "+1 (714) 724 - 1843",
+    email_address: "anadam@berkeley.edu"
 };
 
 // Twitter Section
@@ -379,6 +464,7 @@ const isHireable = false; // Set false if you are not looking for a job. Also is
 export {
   illustration,
   greeting,
+  mainBody,
   socialMediaLinks,
   splashScreen,
   skillsSection,

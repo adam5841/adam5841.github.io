@@ -6,10 +6,15 @@
   line-height: normal;
   margin: 0px;
 }
+.achievement-main-div {
+  width: 90%; // Set the width to 90% of the parent
+  margin: 0 auto; // Center the container horizontally
+  padding: 20px 10px; // Optional: adjust the padding to your requirements
+}
 .achievement-subtitle {
   text-transform: uppercase;
   margin: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 .subTitle {
   color: $subTitle;

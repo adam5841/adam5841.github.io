@@ -2,12 +2,29 @@
 
 .skills-main-div {
   display: flex;
-  width: 100%;
-  overflow: hidden;
+  justify-content: space-between; // Ensures space is distributed evenly
+  align-items: center; // Align items vertically in the center
+  text-align: center; // Center the text within the children
+
+  .skills-image-div {
+    // Container for the image
+    padding-bottom: 200px;
+    width: 100px; // Width of the image plus some padding
+    height: 100px; // Height of the image plus some padding
+
+    .profile-image {
+      width: 50%; // Or set a fixed width and height if you prefer
+      height: auto;
+      border: none;
+      outline: none;
+      border-radius: 50%; // This will make the image round
+      object-fit: cover; // This will ensure the image covers the area and is not stretched
+    }
+  }
 }
 
 .skills-text-div {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .skills-main-div > * {
