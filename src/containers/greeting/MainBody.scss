@@ -1,0 +1,52 @@
+.bgstyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(136deg, #5ba7c4 0%, #945daf 25%, #ee9f9d 50%, #89f7fe 75%, #5ba7c4 100%); // Smooth gradient transition
+    background-size: 500% 500%; // Make the background larger than the container to enable animation
+    animation: BackgroundAnimation 20s ease infinite;
+    backface-visibility: hidden;
+    perspective: 1000;
+    transform: translate3d(0,0,0);
+}
+
+.typist {
+    padding-bottom: 40px;
+}
+
+
+.name-text {
+    font-size: 100px;
+}
+
+@keyframes BackgroundAnimation {
+    0% {
+        background-position: 100% 50%;
+    }
+    50% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+  
+  
+/* Adjusted the class for social icons */
+.socialicons {
+    margin: 1rem; /* Keep this if it's needed for the social icons */
+    font-size: 3rem;
+
+}
+
+/* This class should be added to the container of the social icons */
+.social-icons-container {
+    display: flex;
+    justify-content: flex-end; /* This will align the icons to the right */
+}
+
+.Cursor {
+    display: none !important;
+}

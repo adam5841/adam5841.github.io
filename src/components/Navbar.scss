@@ -1,0 +1,47 @@
+/* @import "../../_globalColor"; */
+
+.navbar {
+    position: fixed;
+    left: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1000; // Any high value to ensure it's on top of other content
+}
+
+.navbar-scroll {
+    background-color: rgba(255, 255, 255, 0.9); // Adjust the alpha for desired transparency
+}
+
+.navbar-nav {
+    background-color: transparent !important; /* Using !important to override Bootstrap styles if necessary */
+    margin-right: 0; /* or whatever value you prefer */
+  }
+
+.navbar-transparent {
+    background-color: transparent !important;
+  }
+  
+  .navbar-white {
+    background-color: rgba(23, 28, 40, 1) !important;
+    
+  }
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #111111;
+}
+
+  
+.nav-link {
+    color: #111111;
+    text-decoration: none;
+    padding: 0.5rem 1rem; /* Adjust the padding to increase spacing */
+}
+  
+
+  
+.nav-item:hover {
+    text-decoration: underline; // This will add the underline on hover
+  }

@@ -1,0 +1,81 @@
+@import "../../_globalColor";
+
+.skills-main-div {
+  display: flex;
+  justify-content: space-between; // Ensures space is distributed evenly
+  align-items: center; // Align items vertically in the center
+  text-align: center; // Center the text within the children
+
+  .skills-image-div {
+    // Container for the image
+    padding-bottom: 200px;
+    width: 100px; // Width of the image plus some padding
+    height: 100px; // Height of the image plus some padding
+
+    .profile-image {
+      width: 50%; // Or set a fixed width and height if you prefer
+      height: auto;
+      border: none;
+      outline: none;
+      border-radius: 50%; // This will make the image round
+      object-fit: cover; // This will ensure the image covers the area and is not stretched
+    }
+  }
+}
+
+.skills-text-div {
+  margin-left: 30px;
+}
+
+.skills-main-div > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+.skills-image-div > img {
+  max-width: 100%;
+  height: auto;
+}
+
+.skills-heading {
+  font-size: 56px;
+  font-weight: 400;
+}
+.subTitle {
+  color: $subTitle;
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  .skills-heading {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .skills-heading {
+    font-size: 30px;
+    text-align: center;
+  }
+  .greeting-text-p {
+    font-size: 16px;
+    line-height: normal;
+  }
+  .skills-main-div {
+    flex-direction: column;
+  }
+  .skills-text-div {
+    margin-left: 0px;
+    margin: 20px;
+  }
+  .skills-text {
+    font-size: 16px;
+  }
+  .skills-text-subtitle {
+    font-size: 16px;
+    text-align: center;
+  }
+  .skills-image-div {
+    /* display: none; */
+    order: 2;
+  }
+}
