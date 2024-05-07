@@ -57,16 +57,11 @@ const Main = () => {
               icons={mainBody.icons}
             />
             <Skills />
-            {/* <StackProgress /> */}
             <Education />
             <WorkExperience />
-            <Projects />
+            {/* <Projects /> */}
             <StartupProject />
             <Achievement />
-            {/* <Blogs />
-            <Talks />
-            <Twitter />
-            <Podcast /> */}
             <Profile />
             <ScrollToTopButton />
           </>
