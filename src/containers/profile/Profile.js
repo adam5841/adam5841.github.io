@@ -8,7 +8,7 @@ const GithubProfileCard = lazy(() =>
   import("../../components/githubProfileCard/GithubProfileCard")
 );
 export default function Profile() {
-  
+
     return <Contact />;
   
 }
